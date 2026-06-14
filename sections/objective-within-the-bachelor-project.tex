@@ -1,15 +1,36 @@
-\begin{frame}{Objective within the Bachelor Thesis}
-
+\begin{frame}{Objective within the Bachelor Thesis}{Proposed solution}
 \begin{outline}
     %What did you want to contribute as a team to the problem statement you presented?
     %Which solution do you propose?
-    \1 Prosposed solution
-
-    %What was your MVP?
-    \1 MVP
-
-    %What was the broader or ultimate scope?
-    \1 Broader scope
+    \1 Proposed solution
+        \2 Federated learning
+        \2 \st{Data to the model (centralized)}
+        \2 Model to the data (decentralized)
+        \2 Privacy, Regulations
+        \2 Bandwidth
 \end{outline}
+\end{frame}
 
+\begin{frame}{Objective within the Bachelor Thesis}{Federated learning algorithm}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\textwidth]{media/federated-learning-algorithm}\label{fig:federated-learning-algorithm}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Objective within the Bachelor Thesis}{Scope}
+\footnotesize
+\begin{table}[htb]\centering
+    \caption{\footnotesize Red color represents MVP, orange and blue represent broader or ultimate scope.}\label{tab:requirements-with-scope}
+    \csvreader[
+        tabular = | p{0.2\textwidth} | p{0.75\textwidth} |,
+        table head = \hline \textbf{Importance} & \textbf{Requirement}\\\hline,
+        late after line = \\\hline,
+        separator = semicolon
+    ]{media/requirements-with-scope.csv}%
+    {Importance=\importance, Requirement=\requirement}{%
+        \importance & \requirement
+    }
+\end{table}
+\normal
 \end{frame}

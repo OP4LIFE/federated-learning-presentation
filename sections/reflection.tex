@@ -1,8 +1,12 @@
 %What went well and what could have been improved?
 \begin{frame}{Reflection}{Achieved objectives}
+\begin{outline}
+    \1 Larger dataset
+    \1 Approach comparison
+    \1 Metric difference $\sim 0.03$ (train)
+\end{outline}
 \footnotesize
 \begin{table}[htb]\centering
-    \caption{\footnotesize Red color represents MVP, orange and blue represent broader or ultimate scope.}\label{tab:requirements-with-scope-and-completion}
     \csvreader[
         tabular = | p{0.16\textwidth} | p{0.7\textwidth} | p{0.07\textwidth} |,
         table head = \hline \textbf{Importance} & \textbf{Requirement} & \textbf{Done}\\\hline,
@@ -12,37 +16,38 @@
     {Importance=\importance, Requirement=\requirement, Done=\done}{%
         \importance & \requirement & \done
     }
+    \caption{\footnotesize Red color represents MVP, orange and blue represent broader or ultimate scope. Bold requirements was shown in the demo. }\label{tab:requirements-with-scope-and-completion}
 \end{table}
 \normal
 \end{frame}
 
 %What went well and what could have been improved?
 %What are the strengths, weaknesses and limitations of your solution?
-\begin{frame}{Reflection}{Added value and impact}
-\begin{outline}
-    \1 Privacy (not only patients)
-    \1 Better diagnosis tools (doctors)
-    \1 Regulations (developers)
-    \1 Less network usage (climate)
-    \1 Project opportunities (Result)
-    \1 Research (scientists)
-\end{outline}
-\end{frame}
-
-%What went well and what could have been improved?
-%What are the strengths, weaknesses and limitations of your solution?
 \begin{frame}{Reflection}{Improvements, and choice reflection}
 \begin{outline}
-\0 Improvements and weaknesses
+    \0 Improvements and weaknesses
     \1 Evaluation metrics
 %    \1 Better and more readable model
     \1 Separate networks
     \1 Real TLS certification
 %    \1 Reducing model size and bandwidth
-\vspace{0.5cm}
-\0 Choice reflection
+    \vspace{0.5cm}
+    \0 Choice reflection
     \1 Excellent
     \1 No change
+\end{outline}
+\end{frame}
+
+%What went well and what could have been improved?
+%What are the strengths, weaknesses and limitations of your solution?
+\begin{frame}{Reflection}{Added value and impact}
+\begin{outline}
+    \1 Privacy (patients)
+    \1 Regulations (project managers, lawyers, developer)
+    \1 Better diagnosis tools (doctors)
+    \1 Less network usage (climate)
+    \1 Project opportunities (Result)
+    \1 Research community (scientists)
 \end{outline}
 \end{frame}
 
